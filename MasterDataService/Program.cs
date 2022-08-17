@@ -9,7 +9,7 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.File("C:/Users/bianco.m/Logs/MDSLatest.txt").ReadFrom.Configuration(ctx.Configuration));
+builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.File("C:/Users/User/Logs/MDSLatest.txt").ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddControllers();
 builder.Services.AddSqlServer<AppDbContext>(builder.Configuration.GetConnectionString("LocalDb"));
 builder.Services.AddScoped<IWriteRepository, WriteRepository>();

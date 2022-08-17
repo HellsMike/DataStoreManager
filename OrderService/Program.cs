@@ -8,7 +8,7 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.File("C:/Users/bianco.m/Logs/MDSLatest.txt").ReadFrom.Configuration(ctx.Configuration));
+builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.File("C:/Users/User/Logs/MDSLatest.txt").ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddControllers();
 builder.Services.Configure<OrderServiceDatabaseSettings>(builder.Configuration.GetSection("OrderServiceDatabase"));
 builder.Services.AddScoped<IIncomingRepository, IncomingRepository>();
