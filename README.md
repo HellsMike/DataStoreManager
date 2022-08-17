@@ -3,12 +3,13 @@
 **C# / ASP.NET Core**
 
 DataStoreManager emulate a warehouse management software with input/output orders, respective pallets and items details.
+You can interface with the different services through the API Gateway on port 7219.
 This project is done with the purpose of learning microservices architecture; although it works this project is not suitable for a real warehouse because it is developed in a too semplistic way for a real situation.
 
 ### Requirements
-- A locally deployed MongoDB instance
+- A locally deployed MongoDB instance on port 27017
 - A locally deployed SQLServer instance
-- A locally deployed Apache Kafka instance
+- A locally deployed Apache Kafka instance on port 9092
 - Microsoft.Extensions.Hosting 6.0.0
 - Microsoft.EntityFrameworkCore 6.0.0
 - Microsoft.EntityFrameworkCore.Tools 6.0.0
