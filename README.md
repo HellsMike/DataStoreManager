@@ -1,6 +1,6 @@
 # DataStoreManager
 
-**C# / ASP.NET Core**
+![**C#\ASP.NET Core**](https://img.shields.io/badge/C%23-ASP.NET%20Core-brightgreen)
 
 DataStoreManager emulate a warehouse management software with input/output orders, respective pallets and items details.
 You can interface with the different services through the API Gateway on port 7219.
